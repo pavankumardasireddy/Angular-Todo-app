@@ -13,7 +13,9 @@ export class TodosComponent implements OnInit {
   constructor(private service: TodosService) { }
 
   ngOnInit(): void {
-    this.todos = this.service.getTodos();
+   this.service.getTodos().subscribe(todos =>{
+     this.todos = todos;
+   });
   }
 
 }

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { CourseService } from './course.service';
 import { CoursesService } from './courses.service';
 import { CoursesComponent } from './courses.component';
@@ -21,7 +22,8 @@ import { TodosService } from './services/todos.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     CoursesService,
