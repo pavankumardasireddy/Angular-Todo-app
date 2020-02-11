@@ -1,4 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { CourseService } from './course.service';
 import { CoursesService } from './courses.service';
 import { CoursesComponent } from './courses.component';
@@ -11,6 +12,9 @@ import { CourseComponent } from './course/course.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { TodosService } from './services/todos.service';
+import { HeaderComponent } from './components/header/header.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,15 @@ import { TodosService } from './services/todos.service';
     CoursesComponent,
     CourseComponent,
     TodosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    HeaderComponent,
+    AddTodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     CoursesService,
