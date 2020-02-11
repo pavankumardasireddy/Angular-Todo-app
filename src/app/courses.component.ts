@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
     template: `
         <h2>{{ getTitle() }}</h2>
         <ul>
-            <li *ngFor="let course of courses">
-                <h5>{{ course }}</h5>
+            <li *ngFor="let skill of courses">
+                <h5>{{ skill }}</h5>
             </li>
         </ul>
     `
 
 })
 export class CoursesComponent {
-    title = 'List of Courses';
+    title = 'My Skills:';
     courses;
 
     constructor(service: CoursesService) {

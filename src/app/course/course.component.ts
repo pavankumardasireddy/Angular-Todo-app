@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent implements OnInit {
   list;
-  orgName = 'AGS';
+  name = 'My Name';
   constructor(private service: CourseService) {
     this.list = service.getList();
    }
