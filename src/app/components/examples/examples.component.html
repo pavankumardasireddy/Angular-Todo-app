@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row m-3">
+    <div class="row mt-3">
       <div class="col-sm">
         <div>
             <h3>ngFor</h3>
@@ -12,7 +12,7 @@
         <div>
             <h3>ngIf</h3>
             <ul *ngFor="let user of users">
-                <li *ngIf="user.age < 20"
+                <li *ngIf="user.age >= 18"
                     class="text-success">{{ user.name }}</li>
             </ul>
         </div>
@@ -42,10 +42,30 @@
         </div>
       </div>
       <div class="col-sm">
-        One of three columns
+          <!-- To add style, we use [ngStyle] -->
+        <p [ngStyle]="{'font-size.px':24}">ngStyle</p>
+        <span [ngStyle]="{'border':'1px solid green'}">users below</span>
+        <!-- We can use [style.property] to directly add one -->
+        <p [style.font-size.px]="21">18 yrs</p>
+        <!-- We can also add [style.property] value by binding the function -->
+        <ul *ngFor="let user of users"
+            [style.color]="getPermit(user.age)">
+            <li>{{user.name}}</li>
+        </ul>
       </div>
       <div class="col-sm">
-        One of three columns
+          <!-- To add one class, we can use [class] -->
+            <p [class]="'ngClassTitle'">ngClass</p>
+            <ul *ngFor="let user of users">
+                <li>
+                    <!-- To add multiple classes based on conditions, we use [ngClass] -->
+                    <p [ngClass]="{
+                        'red': user.age < 18,
+                        'green': user.age >= 18
+                    }">{{user.name}}</p>
+                    <p>from: {{user.city}}</p>
+                </li>
+            </ul>
       </div>
     </div>
   </div>

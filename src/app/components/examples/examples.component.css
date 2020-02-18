@@ -1,0 +1,14 @@
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.ngClassTitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: yellowgreen;
+}

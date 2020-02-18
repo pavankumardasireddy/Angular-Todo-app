@@ -16,13 +16,13 @@ export class ExamplesComponent implements OnInit {
       city: 'Vijayawada',
     },
     {
-      name: 'Rama',
+      name: 'Ramu',
       age: 18,
       city: 'Vizag',
     },
     {
       name: 'krishna',
-      age: 27,
+      age: 16,
       city: 'Dwaraka',
     },
     {
@@ -35,4 +35,5 @@ export class ExamplesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getPermit = (age: number) =>  age < 18 ? 'red' : 'green';
 }
