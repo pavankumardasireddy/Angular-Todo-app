@@ -1,3 +1,4 @@
+import { ExamplesComponent } from './components/examples/examples.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { CoursesComponent } from './courses.component';
 import { TodosComponent } from './components/todos/todos.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'skills', component: CoursesComponent},
   { path: 'me', component: CourseComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'eg', component: ExamplesComponent}
 ];
 
 @NgModule({

@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { from } from 'rxjs';
 import { AboutComponent } from './components/pages/about/about.component';
+import { ExamplesComponent } from './components/examples/examples.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutComponent } from './components/pages/about/about.component';
     TodoItemComponent,
     HeaderComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
+    ExamplesComponent
   ],
   imports: [
     BrowserModule,

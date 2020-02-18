@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row m-3">
+      <div class="col-sm">
+        <div>
+            <h3>ngFor</h3>
+            <ul *ngFor="let user of users">
+                <li> {{ user.name }} </li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div>
+            <h3>ngIf</h3>
+            <ul *ngFor="let user of users">
+                <li *ngIf="user.age < 20"
+                    class="text-success">{{ user.name }}</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div>
+            <h3>ngSwitch</h3>
+            <ul *ngFor="let user of users" 
+                [ngSwitch]="user.city">
+                <li *ngSwitchCase="'Vijayawada'"
+                    class="text-success">
+                    {{user.name}}
+                </li>
+                <li *ngSwitchCase="'Vizag'"
+                    class="text-primary">
+                    {{user.name}}
+                </li>
+                <li *ngSwitchCase="'Hyderabad'"
+                    class="text-danger">
+                    {{user.name}}
+                </li>
+                <li *ngSwitchDefault
+                    class="text-warning">
+                    {{user.name}}
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
