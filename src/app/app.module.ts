@@ -18,6 +18,7 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { from } from 'rxjs';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ExamplesComponent } from './components/examples/examples.component';
+import { AyncPipesComponent } from './components/examples/pipes/aync-pipes/aync-pipes.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ExamplesComponent } from './components/examples/examples.component';
     AddTodoComponent,
     AboutComponent,
     ExamplesComponent,
-    PipesComponent
+    PipesComponent,
+    AyncPipesComponent
   ],
   imports: [
     BrowserModule,
