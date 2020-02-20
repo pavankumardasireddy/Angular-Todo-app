@@ -1,3 +1,4 @@
+import { PipesComponent } from './components/examples/pipes/pipes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CourseService } from './course.service';
@@ -28,7 +29,8 @@ import { ExamplesComponent } from './components/examples/examples.component';
     HeaderComponent,
     AddTodoComponent,
     AboutComponent,
-    ExamplesComponent
+    ExamplesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
