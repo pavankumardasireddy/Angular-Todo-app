@@ -19,6 +19,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { AyncPipesComponent } from './components/examples/pipes/aync-pipes/aync-pipes.component';
 import { DefaultPipe } from './pipes/default.pipe';
+import { FormComponent } from './components/Forms/form/form.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DefaultPipe } from './pipes/default.pipe';
     ExamplesComponent,
     PipesComponent,
     AyncPipesComponent,
-    DefaultPipe
+    DefaultPipe,
+    FormComponent
   ],
   imports: [
     BrowserModule,
