@@ -6,9 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./aync-pipes.component.css']
 })
 export class AyncPipesComponent {
-  promiseData: any;
+  promise: Promise<any>;
   constructor() {
-    this.getPromise().then(v => this.promiseData = v);
+   this.promise = this.getPromise();
   }
 
   getPromise() {
