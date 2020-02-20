@@ -15,10 +15,10 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { TodosService } from './services/todos.service';
 import { HeaderComponent } from './components/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
-import { from } from 'rxjs';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { AyncPipesComponent } from './components/examples/pipes/aync-pipes/aync-pipes.component';
+import { DefaultPipe } from './pipes/default.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { AyncPipesComponent } from './components/examples/pipes/aync-pipes/aync-
     AboutComponent,
     ExamplesComponent,
     PipesComponent,
-    AyncPipesComponent
+    AyncPipesComponent,
+    DefaultPipe
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./aync-pipes.component.css']
 })
 export class AyncPipesComponent {
+  imgUrl: string;
   promise: Promise<any>;
   constructor() {
    this.promise = this.getPromise();
@@ -13,7 +14,7 @@ export class AyncPipesComponent {
 
   getPromise() {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve('Promise Completed!'), 3000);
+      setTimeout(() => resolve('Promise Completed!'), 2000);
     });
   }
 }
